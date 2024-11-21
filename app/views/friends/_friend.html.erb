@@ -1,0 +1,16 @@
+<tr>
+  <td><%= friend.first_name %></td>
+  <td><%= friend.last_name %></td>
+  <td><%= friend.email %></td>
+  <td><%= friend.phone %></td>
+  <td><%= friend.twitter %></td>
+  <td>
+    <%= link_to "Show", friend, class: "btn btn-primary btn-sm" %>
+  </td>
+  <td>
+    <%= link_to "Edit", edit_friend_path(friend), class: "btn btn-warning btn-sm" %>
+  </td>
+  <td>
+    <%= link_to "Destroy", friend, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger btn-sm" %>
+  </td>
+</tr>
